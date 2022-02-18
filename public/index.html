@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Setup -->
+        <meta charset="UTF-8">
+        <title>GMod Lua</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="icon.png"/>
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        
+        <!-- IDE -->
+        <script src="code/codemirror.js"></script>
+        <link rel="stylesheet" href="code/codemirror.css" />
+        <script src="code/lua.js"></script>
+        <link rel="stylesheet" href="code/darcula.css" />
+        
+        <!-- Lua Runtime -->
+        <script src="lua/fengari-web.js"></script>
+        <script src="lua/gmod.lua" type="application/lua" async></script>
+    </head>
+    <body>
+        <textarea id="ide"></textarea>
+        <button id="run" class="transpile" type="button"><b>Run<b></button>
+        <div>
+            <canvas id="screen" class="output" width="800" height="400"></canvas>
+            <div id="terminal"></div>
+            <div>
+                <h1 class="title break">Canvas Config</h1>
+            </div>
+        </div>
+        <script defer src="canvas.js"></script>
+        <script src="ide.js"></script>
+    </body>
+</html>

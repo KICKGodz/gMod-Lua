@@ -1,0 +1,30 @@
+body {
+    background-color: #2e2e2e;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.output {
+    border: 2px solid #1e1e1e;
+    border-radius: 5px;
+}
+
+.title {
+    color: white;
+}
+
+.transpile {
+    background-color: #1e1e1e;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.transpile:hover {
+    background-color: #4169e0;
+}
